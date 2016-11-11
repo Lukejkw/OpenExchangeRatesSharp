@@ -1,11 +1,12 @@
-﻿using OpenExchangeRatesSharp.Models;
+﻿using OpenExchangeRatesSharp.Contracts;
+using OpenExchangeRatesSharp.Models;
 using RestSharp;
 using System;
 using System.Net;
 
 namespace OpenExchangeRatesSharp
 {
-    public class RateClient
+    public class RateClient : IRateClient
     {
         private const string DefaultBaseUrl = "https://openexchangerates.org/api/";
         public const string DefaultBaseCurrency = "USD";
