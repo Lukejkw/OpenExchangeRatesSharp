@@ -7,7 +7,8 @@ A simple C# wrapper over the [https://openexchangerates.org](penexchangerates.or
 ## Getting Started
 
 1. Register on the site and get an API Key
-2. Use the api
+2. Install via Nuget ```Install-Package OpenExchangeRatesSharp```
+3. Use the API
 
 ### Example Usage:
 
