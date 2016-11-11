@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("OpenExchangeRatesSharp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A simple C# wrapper over the [https://penexchangerates.org](penexchangerates.org) API")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("LukeWarrenDev")]
 [assembly: AssemblyProduct("OpenExchangeRatesSharp")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]

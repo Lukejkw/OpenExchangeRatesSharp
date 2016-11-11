@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>OpenExchangeRatesSharp</id>
+    <version>1.0.0</version>
+    <title>OpenExchangeRates C# Wrapper</title>
+    <authors>Luke Warren</authors>
+    <owners>Luke Warren</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://lukewarrendev.co.za/media/1001/profile_photo_circle.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A simple C# wrapper over the [https://openexchangerates.org/](openexchangerates.org) API</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>OpenExchangeRates,Exchange Rates</tags>
+    <dependencies>
+      <dependency id="RestSharp" version="105.2.3" targetFramework="net452" />
+    </dependencies>
+  </metadata>
+</package>

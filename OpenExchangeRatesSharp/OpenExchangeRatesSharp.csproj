@@ -50,6 +50,7 @@
     <Compile Include="Models\RateResult.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="OpenExchangeRatesSharp.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
