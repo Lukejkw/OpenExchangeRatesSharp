@@ -32,12 +32,12 @@ namespace OpenExchangeRatesSharp
         /// <param name="baseCurrencyCode">The currency to use was the base</param>
         /// <param name="symbols">The currencies to show rates for (default is all)</param>
         /// <returns></returns>
-        public RateResult GetLatest(string baseCurrencyCode = "USD", string[] symbols = null)
+        public RateResult GetLatest(string baseCurrencyCode = DefaultBaseCurrency, string[] symbols = null)
         {
             var request = new RestRequest("latest.json", Method.GET);
             request.AddQueryParameter("app_id", ApiKey);
 
-            if (baseCurrencyCode != "USD")
+            if (baseCurrencyCode != DefaultBaseCurrency)
                 request.AddQueryParameter("base", baseCurrencyCode);
             if (symbols != null)
                 request.AddQueryParameter("symbols", string.Join(",", symbols));
