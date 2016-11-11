@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenExchangeRatesSharp", "OpenExchangeRatesSharp\OpenExchangeRatesSharp.csproj", "{14F532A3-B9E5-483A-8EF6-25FF9233B886}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{395AA454-FAFD-4628-B237-A2698FCF5F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{CCC08210-D331-4748-A161-A4A21AAF6A21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
