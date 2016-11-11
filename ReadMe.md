@@ -1,6 +1,6 @@
 # OpenExchangeRatesSharp
 
-A simple C# wrapper over the [https://penexchangerates.org](penexchangerates.org) API
+A simple C# wrapper over the [https://openexchangerates.org](penexchangerates.org) API
 
 ## Getting Started
 
@@ -11,8 +11,9 @@ A simple C# wrapper over the [https://penexchangerates.org](penexchangerates.org
 
 ```javascript
 
-var result = sut.GetLatest();
-result.Rates; // A dictionary of the rates
+var client = new RateClient("your_api_key")
+var result = client.GetLatest();
+var rates = result.Rates; // A dictionary of the rates
 
 ```
 
@@ -24,8 +25,6 @@ If you are using the free account, do not use anything other than the defaults.
 ## Paid Account Users
 
 This library has not been tested with a paid account but should still work.
-
-Created by Luke warren. More about me at [http://lukewarrendev.co.za](LukeWarrenDev.co.za)
 
 ## Contributers
 
@@ -45,4 +44,4 @@ To run the tests you will need to add an App.config file to the root of the inte
 
 ```
 
-
+Created by Luke warren. More about me at [http://lukewarrendev.co.za](LukeWarrenDev.co.za)
