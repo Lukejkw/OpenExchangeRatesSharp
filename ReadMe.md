@@ -31,7 +31,9 @@ This library has not been tested with a paid account but should still work.
 
 ## Contributers
 
-To run the tests you will need to add an App.config file to the root of the integration test project
+To run the tests you will need to add an App.config file to the root of the integration test project and then include it.
+
+### NOTE Please make sure that this file is excluded when you put in a PR or the CI build will fail
 
 ### Example
 
