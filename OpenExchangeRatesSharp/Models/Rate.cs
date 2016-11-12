@@ -1,8 +1,11 @@
 ﻿namespace OpenExchangeRatesSharp.Models
 {
-    public class Rate
+    public class ConversionResult
     {
-        public string Currency { get; set; }
-        public decimal Value { get; set; }
+        public string Disclaimer { get; set; }
+        public decimal License { get; set; }
+        public Request Request { get; set; }
+        public Meta Meta { get; set; }
+        public decimal Response { get; set; }
     }
 }

@@ -41,7 +41,6 @@ To run the tests you will need to add an App.config file to the root of the inte
 <configuration>
   <appSettings>
     <add key="api.key" value="your_api_key" />
-    <add key="base.country.key" value="USD" />
   </appSettings>
 </configuration>
 

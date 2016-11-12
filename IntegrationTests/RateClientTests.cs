@@ -9,9 +9,6 @@ namespace IntegrationTests
     [TestFixture]
     public class RateClientTests
     {
-        private string ApiKey => ConfigurationManager.AppSettings["api.key"];
-        private string BaseCountry => ConfigurationManager.AppSettings["base.country.key"];
-
         [Test]
         public void GetLatestForFreePlan_WithValidApiKey_ReturnsRates()
         {
@@ -31,5 +28,32 @@ namespace IntegrationTests
             var ex = Assert.Throws<Exception>(() => sut.GetLatest());
             Assert.IsTrue(ex.Message.Contains("Invalid API key"));
         }
+
+        #region Helpers
+
+        private bool IsInAppVeyor
+        {
+            get
+            {
+                string value = Environment.GetEnvironmentVariable("APPVEYOR");
+                if (string.IsNullOrEmpty(value))
+                    return false;
+                return Convert.ToBoolean(value);
+            }
+        }
+
+        private string ApiKey
+        {
+            get
+            {
+                if (IsInAppVeyor)
+                {
+                    return Environment.GetEnvironmentVariable("api.key");
+                }
+                return ConfigurationManager.AppSettings["api.key"];
+            }
+        }
+
+        #endregion
     }
 }

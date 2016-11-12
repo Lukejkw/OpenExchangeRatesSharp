@@ -45,7 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IRateClient.cs" />
+    <Compile Include="Models\Meta.cs" />
     <Compile Include="Models\Rate.cs" />
+    <Compile Include="Models\Request.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RateClient.cs" />
     <Compile Include="Models\RateResult.cs" />
