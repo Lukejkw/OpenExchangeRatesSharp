@@ -2,7 +2,7 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/pgqxlne84y94sb2n?svg=true)](https://ci.appveyor.com/project/Lukejkw/openexchangeratessharp)
 
-A simple C# wrapper over the [https://openexchangerates.org](penexchangerates.org) API
+A simple C# wrapper over the [https://openexchangerates.org](openexchangerates.org) API
 
 ## Getting Started
 
