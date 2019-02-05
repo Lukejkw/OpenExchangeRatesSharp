@@ -1,67 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{14F532A3-B9E5-483A-8EF6-25FF9233B886}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenExchangeRatesSharp</RootNamespace>
-    <AssemblyName>OpenExchangeRatesSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>OpenExchangeRates C# Wrapper</Title>
+    <Description>A simple C# wrapper over the [https://openexchangerates.org/](openexchangerates.org) API</Description>
+    <Company>LukeWarrenDev</Company>
+    <Authors>Luke Warren</Authors>
+    <Version>1.0.2</Version>
+    <PackageId>OpenExchangeRatesSharp</PackageId>
+    <PackageLicenseUrl>https://github.com/Lukejkw/OpenExchangeRatesSharp/blob/master/License.md</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/Lukejkw/OpenExchangeRatesSharp/</PackageProjectUrl>
+    <PackageIconUrl>http://lukewarrendev.co.za/media/1001/profile_photo_circle.png</PackageIconUrl>
+    <PackageTags>OpenExchangeRates,Exchange Rates</PackageTags>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RestSharp, Version=106.6.7.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.106.6.7\lib\net452\RestSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <PackageReference Include="RestSharp" Version="106.6.7" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Contracts\IRateClient.cs" />
-    <Compile Include="Models\Meta.cs" />
-    <Compile Include="Models\Rate.cs" />
-    <Compile Include="Models\Request.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RateClient.cs" />
-    <Compile Include="Models\RateResult.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="OpenExchangeRatesSharp.nuspec" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
