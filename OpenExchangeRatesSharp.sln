@@ -1,14 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenExchangeRatesSharp", "OpenExchangeRatesSharp\OpenExchangeRatesSharp.csproj", "{14F532A3-B9E5-483A-8EF6-25FF9233B886}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{395AA454-FAFD-4628-B237-A2698FCF5F0A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{CCC08210-D331-4748-A161-A4A21AAF6A21}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2EA594A1-EEEF-4016-97A7-157620636D88}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -17,26 +11,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenExchangeRatesSharp", "OpenExchangeRatesSharp\OpenExchangeRatesSharp.csproj", "{3DC3B1AF-B579-4006-8771-A41332BD0624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{DEE6CEEE-F97E-4DCD-8B72-703D18616E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{001EABE5-5823-4086-80E4-BCAF1BC3A22D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14F532A3-B9E5-483A-8EF6-25FF9233B886}.Release|Any CPU.Build.0 = Release|Any CPU
-		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{395AA454-FAFD-4628-B237-A2698FCF5F0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCC08210-D331-4748-A161-A4A21AAF6A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC3B1AF-B579-4006-8771-A41332BD0624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC3B1AF-B579-4006-8771-A41332BD0624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC3B1AF-B579-4006-8771-A41332BD0624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC3B1AF-B579-4006-8771-A41332BD0624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEE6CEEE-F97E-4DCD-8B72-703D18616E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE6CEEE-F97E-4DCD-8B72-703D18616E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE6CEEE-F97E-4DCD-8B72-703D18616E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE6CEEE-F97E-4DCD-8B72-703D18616E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001EABE5-5823-4086-80E4-BCAF1BC3A22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001EABE5-5823-4086-80E4-BCAF1BC3A22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001EABE5-5823-4086-80E4-BCAF1BC3A22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001EABE5-5823-4086-80E4-BCAF1BC3A22D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {348982CF-21E7-4C37-BB7C-5281649E710F}
 	EndGlobalSection
 EndGlobal

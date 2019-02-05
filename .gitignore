@@ -243,4 +243,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-/IntegrationTests/App.config
+/IntegrationTests/client-settings.json

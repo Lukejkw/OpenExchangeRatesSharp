@@ -1,7 +1,7 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.Extensions.Configuration;
+using NUnit.Framework;
 using OpenExchangeRatesSharp;
 using System;
-using System.Configuration;
 using System.Linq;
 
 namespace IntegrationTests
@@ -50,7 +50,12 @@ namespace IntegrationTests
                 {
                     return Environment.GetEnvironmentVariable("api.key");
                 }
-                return ConfigurationManager.AppSettings["api.key"];
+
+                var config = new ConfigurationBuilder()
+                    .AddJsonFile("client-settings.json")
+                    .Build();
+
+                return config["api.key"];
             }
         }
 
