@@ -37,7 +37,7 @@ namespace OpenExchangeRatesSharp
         /// <returns></returns>
         public RateResult GetLatest(string baseCurrencyCode = DefaultBaseCurrency, string[] symbols = null)
         {
-            var request = new RestRequest("latest.json", Method.GET);
+            var request = new RestRequest("latest.json", Method.Get);
             if (baseCurrencyCode != DefaultBaseCurrency)
                 request.AddQueryParameter("base", baseCurrencyCode);
             if (symbols != null)
@@ -54,13 +54,13 @@ namespace OpenExchangeRatesSharp
         /// <returns></returns>
         public ConversionResult Convert(string fromCurrency, string toCurrency, decimal value)
         {
-            var request = new RestRequest($"convert/{value}/{fromCurrency}/{toCurrency}", Method.GET);
+            var request = new RestRequest($"convert/{value}/{fromCurrency}/{toCurrency}", Method.Get);
             return Execute<ConversionResult>(request);
         }
 
         #endregion
 
-        private T Execute<T>(IRestRequest request) where T : new()
+        private T Execute<T>(RestRequest request) where T : new()
         {
             request.AddQueryParameter("app_id", ApiKey);
 
