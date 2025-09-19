@@ -5,7 +5,7 @@
     <Description>A simple C# wrapper over the [https://openexchangerates.org/](openexchangerates.org) API</Description>
     <Company>LukeWarrenDev</Company>
     <Authors>Luke Warren</Authors>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageId>OpenExchangeRatesSharp</PackageId>
     <PackageLicenseUrl>https://github.com/Lukejkw/OpenExchangeRatesSharp/blob/master/License.md</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/Lukejkw/OpenExchangeRatesSharp/</PackageProjectUrl>
@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
